@@ -1,0 +1,151 @@
+body {
+    background-color: #a7779d;
+    text-align: center;
+}
+
+.img-logo {
+    width: 45px;
+    margin-left: 50px;
+    animation-duration: 2s;
+}
+
+.bg-light {
+    background-color: rgba(0, 0, 0,0.7) !important;
+    position: fixed;
+    width: 100%;
+    z-index: 5 !important;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+}
+.nav-link:hover{
+    color: #a7779d !important;
+
+}
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    font-size: 21px;
+    font-weight: bold;
+    font-family: none;
+    margin-left: 40px;
+    animation-duration: 2s;
+}
+.navbar-light .navbar-toggler {
+    color: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.8);
+    background-color: white;
+}
+/*---------------------------------------------*/
+
+.alpha-img {
+    width: 35%;
+    animation-duration: 1.5s;
+    padding-top: 80px;
+    margin-bottom: 3%;
+
+}
+
+.con-di{
+    width: 100%;
+    float: left;
+    border: 2px solid darkgoldenrod;
+    background-color: #e6e5c8;
+    text-align: center;
+    margin-top: 5%;
+    font-size: 1em;
+    letter-spacing: 2px;
+    font-weight: bold;
+    border-radius: 25px;
+   /* margin-left: 6%;
+    margin-right: 38px;
+    */
+    margin-right: 19px;
+    margin-left: 18px;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.im{
+    width: 50%;
+    margin-top: 10%;
+}
+.letter{
+    font-size: 40px;
+    color: #a7779d;
+    margin-top: 7px;
+    font-family: cursive;
+}
+.dis{
+    font-weight: normal;
+    font-size: 24px;
+    font-style: oblique;
+    font-family: "Franklin Gothic Medium";
+}
+
+.btt{
+    color: #a7779d ;
+    background-color: white;
+    width: 50%;
+    margin-bottom: 18px;
+    border-radius: 45%;
+    font-weight: bold;
+    border: 1px solid #a7779d;
+}
+.btt:hover{
+    color: white;
+    background-color: #a7779d;
+    transition: background-color 0.9s;
+}
+/*******************test**************/
+.test{
+    text-decoration: none;
+}
+.test button{
+    margin-top: 20px;
+    background-color: white;
+    color: #a7779d;
+    transition: background-color 0.6s;
+    font-weight: bold;
+}
+.test button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+/********************number**********/
+
+.number{
+    font-size: 94px;
+    color:  #a7779d;
+    margin-bottom: 0;
+    font-family: cursive;
+}
+.num-img{
+    margin-bottom: 5px;
+}
+
+
+
+
+/****************responsive************/
+
+@media (min-width: 992px) {
+    .col-lg-2 {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 16.666667%;
+    }
+
+    .con-di {
+        margin-right: 19px;
+        margin-left: 12px;
+    }
+}

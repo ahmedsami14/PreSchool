@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>PRE SCHOOL</title>
+    <link rel="stylesheet" href="css/animate.css-master/animate.css-master/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <script src="css/WOW-master/WOW-master/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <link rel="stylesheet" href="css/quiz.css">
+</head>
+<body>
+    <div id="quizContainer" class="containar ">
+        <div class="title wow infinite zoomIn  ">Our Quiz</div>
+        <div id="question" class="question wow slideInLeft"></div>
+        <label class="container wow zoomInUp delay-1s">
+            <input type="radio" name="option" value="1">
+            <span class="checkmark"></span><span id="opt1"></span>
+        </label>
+        <label class="container wow zoomInUp delay-1s">
+            <input type="radio" name="option" value="2">
+            <span class="checkmark"></span><span id="opt2"></span>
+        </label>
+        <label class="container wow zoomInUp delay-1s">
+            <input type="radio" name="option" value="3">
+            <span class="checkmark"></span><span id="opt3"></span>
+        </label>
+        <label class="container wow zoomInUp delay-1s">
+            <input type="radio" name="option" value="4">
+            <span class="checkmark"></span><span id="opt4"></span>
+        </label>
+        <br>
+        <button class="next-btn wow fadeInRight delay-2s" id="nextButton" onclick="loadNextQuestion();">Next Question</button>
+        <a  href="AlphaBet.html"><button id="next" class="next-btn  bac wow fadeInLeft delay-2s"> Back to Start learn again </button></a>
+    </div>
+    
+ <div id="result" class="result" style="display:none; color: white"></div>
+
+    <div id="back" style="display: none;"><a href="Start.html"><button type="button" class="bak"  >Back to learn more</button></a></div>
+
+    <script src="js/custom.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/quiz.js"></script>
+    <script src="js/jquerani.js"></script>
+</body>
+</html>
