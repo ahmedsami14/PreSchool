@@ -1,4 +1,4 @@
-var currentQuestion=0;
+var currentQuestion=1;
 var score=0;
 var totQuestion=questions.length;
 
@@ -17,11 +17,23 @@ var buttback=document.getElementById('back');
 function loadQuestion(questionIndex){
     var q=questions[questionIndex];
 
-    questionEl.textContent=(questionIndex+ 1)+'-' +q.question;
-    opt1.textContent=q.option1;
-    opt2.textContent=q.option2;
-    opt3.textContent=q.option3;
-    opt4.textContent=q.option4;
+    container.classList.add("fadeOut");
+    container.classList.add("animated");
+        setTimeout(function () {
+        container.classList.remove("fadeOut");
+        container.classList.add("fadeIn");
+        questionEl.textContent=(questionIndex+ 1)+'-' +q.question;
+        opt1.textContent=q.option1;
+        opt2.textContent=q.option2;
+        opt3.textContent=q.option3;
+        opt4.textContent=q.option4;
+    },1000);
+
+    setTimeout(function () {
+        container.classList.remove("fadeOut");
+        container.classList.add("fadeIn");
+    },1000);
+
 
 }
 
@@ -57,4 +69,3 @@ function loadNextQuestion(){
 
 }
 
-loadQuestion(currentQuestion);
